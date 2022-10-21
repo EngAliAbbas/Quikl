@@ -1,0 +1,222 @@
+.loginForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.loginForm .validity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 350px;
+  height: 30px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.loginForm .validity label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.loginForm .validity span {
+  font-size: 15px;
+}
+.loginForm .validity p {
+  position: relative;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.loginForm .validity p:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 1px solid #2E9BB8;
+  border-radius: 50%;
+  margin-left: 10px;
+  background-color: #F5F5F5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.loginForm .validity label input:checked + p:before {
+  width: 16px;
+  height: 16px;
+  background-color: #2E9BB8;
+  border: 5px solid #F5F5F5;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.loginForm .validity label input:checked + p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.loginForm .validity input {
+  display: none;
+}
+.loginForm form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 400px;
+}
+.loginForm form label {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: -13px;
+  width: 400px;
+}
+.loginForm form span {
+  margin-right: 70px;
+}
+.loginForm form input[type=submit], .loginForm form input[type=text], .loginForm form input[type=password] {
+  width: 250px;
+  height: 30px;
+  border-radius: 7px;
+  direction: ltr;
+  padding: 5px;
+}
+.loginForm form input[type=text], .loginForm form input[type=password] {
+  background-color: #F5F5F5;
+  border: 1px solid #2E9BB8;
+  border-radius: 7px;
+  font-size: 20px;
+}
+.loginForm form input[type=text]:focus, .loginForm form input[type=password]:focus {
+  outline-color: rgb(121, 237, 237);
+}
+.loginForm form input[type=submit] {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 15px;
+  width: 100px;
+  height: 38px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.loginForm form p {
+  font-weight: bold;
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .loginForm .validity {
+    margin-top: 10px;
+    width: 200px;
+  }
+  .loginForm .validity span, .loginForm .validity p {
+    font-size: 8px;
+  }
+  .loginForm .validity p::before {
+    width: 8px;
+    height: 8px;
+  }
+  .loginForm .validity label input:checked + p:before {
+    width: 8px;
+    height: 8px;
+  }
+  .loginForm form span {
+    font-size: 10px;
+    margin-right: 120px;
+  }
+  .loginForm form input[type=text], .loginForm form input[type=password] {
+    width: 150px;
+    height: 1px;
+    border-radius: 3px;
+    font-size: 10px;
+    padding: 10px;
+    margin-top: -7px;
+  }
+}
+@media (max-width: 600px) {
+  .loginForm .validity {
+    height: 1px;
+    margin-top: 10px;
+    width: 150px;
+  }
+  .loginForm .validity span, .loginForm .validity p {
+    font-size: 8px;
+  }
+  .loginForm .validity p::before {
+    width: 8px;
+    height: 8px;
+  }
+  .loginForm .validity label input:checked + p:before {
+    width: 8px;
+    height: 8px;
+  }
+  .loginForm form span {
+    font-size: 8px;
+    margin-right: 120px;
+  }
+  .loginForm form input[type=text], .loginForm form input[type=password] {
+    width: 120px;
+    height: 5px;
+    border-radius: 3px;
+    font-size: 10px;
+    padding: 5px;
+    margin-top: -7px;
+  }
+  .loginForm form input[type=submit] {
+    font-size: 8px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    width: 70px;
+    height: 20px;
+  }
+  .loginForm form p {
+    font-size: 5px;
+  }
+}

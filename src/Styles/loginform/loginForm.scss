@@ -1,0 +1,206 @@
+@use  "../variables/variables.scss" as *   ;
+@use "../mixins/mixins.scss" as *;
+
+.loginForm{
+    
+    @include centring ; 
+    flex-direction: column;
+
+    .validity{
+        @include centring ; 
+        margin-bottom: 10px;
+        margin-top: 10px;
+        width: 350px;
+        height: 30px;
+        flex-direction: row;
+        justify-content: space-between;
+       label{
+        @include centring ; 
+        
+       }
+        span  {
+           
+            font-size: 15px;
+        }
+        p {
+            position: relative;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 5px;
+            user-select: none;
+            display: flex;
+
+        }
+        p:before{
+            
+            content: "";
+            width: 20px;
+            height: 20px;
+            border: 1px solid $mainColor ;
+            border-radius: 50%;
+            margin-left: 10px;
+            background-color: $backgroundColor;
+            transition: .3s;
+        }
+        label input:checked + p:before{
+           
+            width: 16px;
+            height: 16px;
+            background-color: $mainColor;
+            border: 5px solid $backgroundColor ;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+        label input:checked + p{
+            @include centring;
+        }
+        input {
+           display: none;
+            
+        }
+        
+    }
+
+
+    form {
+        
+        @include centring;
+        flex-direction: column;
+      
+        width: 400px;
+        
+        label{
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: -13px;
+            width: 400px;
+            
+        }
+        span{
+            margin-right: 70px;
+        }
+        %input {
+            
+            width: 250px;
+            height: 30px;
+            border-radius: 7px;
+            direction: ltr;
+            padding: 5px;
+                }
+
+        input {
+            &[type="text"] , &[type="password"]{
+                @extend %input;
+                background-color: $backgroundColor;
+                border: 1px solid $mainColor;
+                border-radius: 7px;
+                font-size: 20px;
+                &:focus{
+                    outline-color: rgb(121, 237, 237);
+                }
+            }
+
+            
+            
+            &[type="submit"] {
+                @extend %input;
+                background-color: black;
+                color: white;
+                font-weight:bold;
+                font-size: 20px;
+                margin-top: 15px;
+                width: 100px;
+                height: 38px;
+                margin-bottom: 20px;
+                cursor: pointer;
+            }
+            
+        }
+        
+        p{
+            font-weight: bold;
+        }
+    }
+}
+.loginForm{
+@include breakPoints(loginSmall){
+   .validity{
+    margin-top: 10px;
+    width: 200px;
+    span,p {
+        font-size: 8px;
+    }
+    p::before{
+        width: 8px;
+        height: 8px;
+    }
+    label input:checked + p:before{
+        width: 8px;
+        height: 8px;
+    }
+
+   }
+  form  {
+    span{
+    font-size: 10px;
+    margin-right: 120px;
+  }
+  input{
+    &[type="text"] , &[type="password"]{
+        width: 150px;
+        height: 1px;
+        border-radius: 3px;
+        font-size: 10px;
+        padding: 10px;
+        margin-top: -7px;
+    }
+  }
+}
+}
+@include breakPoints(loginExSmall){
+    .validity{
+        height: 1px;
+     margin-top: 10px;
+     width: 150px;
+     span,p {
+         font-size: 8px;
+     }
+     p::before{
+         width: 8px;
+         height: 8px;
+     }
+     label input:checked + p:before{
+         width: 8px;
+         height: 8px;
+     }
+ 
+    }
+   form  {
+     span{
+     font-size: 8px;
+     margin-right: 120px;
+     
+   }
+   input{
+     &[type="text"] , &[type="password"]{
+         width: 120px;
+         height: 5px;
+         border-radius: 3px;
+         font-size: 10px;
+         padding: 5px;
+         margin-top: -7px;
+     }
+     &[type="submit"]{
+        font-size: 8px;
+        margin-top: 5px;
+        margin-bottom: 8px;
+        width: 70px;
+        height: 20px;
+     }
+   }
+   p{
+    font-size: 5px;
+   }
+ }
+ }
+}

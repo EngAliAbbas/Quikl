@@ -1,0 +1,25 @@
+@mixin centring {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+@mixin  breakPoints($point) 
+{
+    @if $point == loginSmall{
+        @media (min-width :600px) and (max-width :1000px)  {
+            @content;
+            
+        }
+    }
+    @if $point == loginExSmall{
+        @media (max-width :600px)  {
+            @content;
+            
+        }
+    }
+    
+}

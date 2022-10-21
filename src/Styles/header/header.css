@@ -1,0 +1,110 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 10px 5px 10px;
+  -webkit-box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.header .logo img {
+  position: relative;
+  margin-right: 60px;
+  width: 90px;
+}
+.header .userInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 300px;
+}
+.header .userInfo img {
+  border: 0.5px ridge;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.header .userInfo p {
+  font-weight: bold;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.header .userInfo .logout, .header .userInfo .notifi {
+  font-size: 25px;
+  cursor: pointer;
+}
+.header .userInfo .Active, .header .userInfo .notActive {
+  display: none;
+  font-weight: bold;
+  background-color: #2E9BB8;
+  color: white;
+  width: 210px;
+  height: 50px;
+  position: absolute;
+  top: 65px;
+  left: 1px;
+  border: none;
+  border-radius: 7px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 1;
+  cursor: pointer;
+}
+.header .userInfo .notActive {
+  display: block;
+}
+.header .userInfo span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 0 4px;
+  position: absolute;
+  min-width: 8px;
+  max-width: 18px;
+  height: 16px;
+  font-size: 8px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 22px;
+  top: 15px;
+  left: 298px;
+}

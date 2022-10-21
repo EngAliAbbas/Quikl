@@ -1,0 +1,29 @@
+.notFound {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  height: 100vh;
+}
+.notFound img {
+  width: 100px;
+}
+.notFound h1 {
+  font-weight: bold;
+  font-size: 100px;
+}
+.notFound p {
+  color: rgb(106, 106, 106);
+}

@@ -1,0 +1,44 @@
+@use  "../variables/variables.scss" as *   ;
+@use "../mixins/mixins.scss" as *;
+.navContent{
+    width: 100%;
+    display: flex;
+   justify-content: flex-start;
+.nav{
+    @include centring;
+    flex-direction: column;
+    justify-content: space-around;
+    height: calc(100vh - 61.6px);
+    width: 230px;
+    background-color: $mainColor;
+
+    nav{
+        @include centring;
+        flex-direction: column;
+    }
+    a{
+        @include centring;
+        justify-content: flex-start;
+        text-align: start;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        width: 230px;
+        font-weight: bold;
+        height: 50px;
+        margin: 5px 0 5px 0;
+        transition: .2s;
+        user-select: none;
+            
+    }
+    a.active{
+    background-color: black;
+    height: 50px;
+    }
+    .icon {
+        color: white;
+        padding:0 30px 0 15px;
+        font-size: 30px;
+    }
+}
+}
