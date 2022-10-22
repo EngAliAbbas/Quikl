@@ -9,17 +9,42 @@
 
 @mixin  breakPoints($point) 
 {
-    @if $point == loginSmall{
-        @media (min-width :600px) and (max-width :1000px)  {
+    @if $point == Extralarge{
+        @media (min-width :1400px)  {
             @content;
             
         }
     }
-    @if $point == loginExSmall{
-        @media (max-width :600px)  {
+    @if $point == ExLdevices{
+        @media (min-width: 1200px)  {
             @content;
             
         }
     }
+    @if $point == Ldevices{
+        @media (min-width: 992px)  {
+            @content;
+            
+        }
+    }
+    @if $point == Mdevices{
+        @media (min-width: 768px)  {
+            @content;
+            
+        }
+    }
+    @if $point == Sdevices{
+        @media (min-width: 576px)  {
+            @content;
+            
+        }
+    }
+    @if $point == ExSdevices{
+        @media (min-width: 576px)  {
+            @content;
+            
+        }
+    }
+    
     
 }

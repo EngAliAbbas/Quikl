@@ -16,7 +16,7 @@ export default function Nav() {
   
   useLayoutEffect(()=>{
     let list = document.querySelectorAll("a");
-    if(location.pathname !== "/dashboard"){
+    if(location.pathname !== "/"){
       list[0].classList.remove("active");
     }
     list.forEach(function (e) {

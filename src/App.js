@@ -16,9 +16,9 @@ export default function App() {
        
        
        <Routes>
-            <Route exact path="/" element = {<Login />}  />
-            <Route  path="/dashboard" element={<Dashboard  />  } >
-              <Route exact path="" element= {<Main />} /> 
+            <Route  path="/Quil-dashboard-under-development" element = {<Login />}  />
+            <Route  path="/" element={<Dashboard  />  } >
+              <Route path="" element= {<Main />} /> 
               <Route path="users" element= {<Users />} />
               <Route path="ads" element={<Ads />}/>
               <Route path="notification" element= {<Notification/>}/>

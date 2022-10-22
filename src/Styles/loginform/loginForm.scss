@@ -8,48 +8,48 @@
 
     .validity{
         @include centring ; 
-        margin-bottom: 10px;
-        margin-top: 10px;
-        width: 350px;
-        height: 30px;
+        margin: 20px 0 20px 0;
+        width: 400px;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
        label{
         @include centring ; 
-        
+        justify-content: space-between;
+        width: 100px;
        }
         span  {
            
             font-size: 15px;
+            
         }
-        p {
-            position: relative;
-            font-weight: bold;
-            font-size: 18px;
-            border-radius: 5px;
+        label p {
+            @include centring;
             user-select: none;
-            display: flex;
+            font-weight: bold;
+
 
         }
         p:before{
             
             content: "";
-            width: 20px;
-            height: 20px;
+            width: 24px;
+            height: 24px;
             border: 1px solid $mainColor ;
             border-radius: 50%;
-            margin-left: 10px;
             background-color: $backgroundColor;
+            margin-left: 10px;
             transition: .3s;
+            
+            
         }
         label input:checked + p:before{
            
-            width: 16px;
-            height: 16px;
+            width: 20px;
+            height: 20px;
             background-color: $mainColor;
             border: 5px solid $backgroundColor ;
             border-radius: 50%;
-            margin-left: 10px;
+            
         }
         label input:checked + p{
             @include centring;
@@ -119,88 +119,7 @@
         
         p{
             font-weight: bold;
+            margin-bottom: 80px;
         }
     }
-}
-.loginForm{
-@include breakPoints(loginSmall){
-   .validity{
-    margin-top: 10px;
-    width: 200px;
-    span,p {
-        font-size: 8px;
-    }
-    p::before{
-        width: 8px;
-        height: 8px;
-    }
-    label input:checked + p:before{
-        width: 8px;
-        height: 8px;
-    }
-
-   }
-  form  {
-    span{
-    font-size: 10px;
-    margin-right: 120px;
-  }
-  input{
-    &[type="text"] , &[type="password"]{
-        width: 150px;
-        height: 1px;
-        border-radius: 3px;
-        font-size: 10px;
-        padding: 10px;
-        margin-top: -7px;
-    }
-  }
-}
-}
-@include breakPoints(loginExSmall){
-    .validity{
-        height: 1px;
-     margin-top: 10px;
-     width: 150px;
-     span,p {
-         font-size: 8px;
-     }
-     p::before{
-         width: 8px;
-         height: 8px;
-     }
-     label input:checked + p:before{
-         width: 8px;
-         height: 8px;
-     }
- 
-    }
-   form  {
-     span{
-     font-size: 8px;
-     margin-right: 120px;
-     
-   }
-   input{
-     &[type="text"] , &[type="password"]{
-         width: 120px;
-         height: 5px;
-         border-radius: 3px;
-         font-size: 10px;
-         padding: 5px;
-         margin-top: -7px;
-     }
-     &[type="submit"]{
-        font-size: 8px;
-        margin-top: 5px;
-        margin-bottom: 8px;
-        width: 70px;
-        height: 20px;
-     }
-   }
-   p{
-    font-size: 5px;
-   }
- }
- }
 }

@@ -19,7 +19,7 @@ export default function  Header() {
 
 const handelLog =()=>{
   if(Bar===false){
-    route('/');
+    route('/Quil-dashboard-under-development');
   }
 }
 

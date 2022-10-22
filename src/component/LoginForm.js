@@ -5,7 +5,7 @@ export default function LoginForm() {
   const  route =  useNavigate()
  const handlClick=(e)=>{
   e.preventDefault() ;
-  route('dashboard') ;
+  route('/') ;
  }
   return (
     <div className='loginForm'>
