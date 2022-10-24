@@ -16,7 +16,7 @@ export default function App() {
        
        
        <Routes>
-            <Route  path="/Quil-dashboard-under-development" element = {<Login />}  />
+            <Route  path="/Quikl" element = {<Login />}  />
             <Route  path="/" element={<Dashboard  />  } >
               <Route path="" element= {<Main />} /> 
               <Route path="users" element= {<Users />} />
