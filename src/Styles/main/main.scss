@@ -1,0 +1,60 @@
+@use  "../variables/variables.scss" as *   ;
+@use "../mixins/mixins.scss" as *;
+.bigMain{
+   @include pagesStyle;
+}
+.mainRight{
+    width: 70%;
+    
+    
+}
+.main{
+    @include centring ; 
+    flex-direction: column;
+
+    .content{
+        @include centring;
+        justify-content: space-around;
+        width: 100%;
+        
+        .contentParts:before{
+            content: "";
+            position: relative;
+            left: -10px; 
+            width: 1.8%;
+            border-radius: 3px;
+            background-color: $mainColor;
+        }
+        .contentParts{
+            width: 30%;
+            display: flex;
+            background-color: $whiteColor;
+            padding: 10px 0 10px 0;
+            border-radius: 7px;
+            flex-wrap: nowrap;
+                        
+                label{
+                font-size: 30px;
+                width: 20%; 
+                background-color: $backgroundColor;
+                margin-right: 30px;
+                @include centring;
+                border-radius: 7px;
+                margin-left: 15px;
+
+                
+            }
+           
+                
+            
+        }
+        
+        
+        
+    }
+    
+    .headerMain{
+        width: 100%;
+        margin: 20px 70px 20px 0 ;
+    }
+}
