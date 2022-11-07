@@ -20,6 +20,11 @@
     margin-top: 7px;
     
 }
+@mixin header {
+    width: 100%;
+        margin: 20px 70px 20px 0 ;
+    
+}
 @mixin  breakPoints($point) 
 {
     @if $point == Extralarge{

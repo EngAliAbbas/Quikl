@@ -3,6 +3,9 @@
   background-color: #F5F5F5;
   height: calc(100vh - 68.6px);
   margin-top: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .mainRight {
@@ -58,8 +61,9 @@
       flex-wrap: nowrap;
 }
 .main .content .contentParts label {
-  font-size: 30px;
+  font-size: 22px;
   width: 20%;
+  height: 43.93px;
   background-color: #F5F5F5;
   margin-right: 30px;
   display: -webkit-box;
@@ -77,4 +81,16 @@
 .main .headerMain {
   width: 100%;
   margin: 20px 70px 20px 0;
+}
+
+.mainContent .contentHeader {
+  width: 100%;
+  margin: 20px 70px 20px 0;
+  margin-right: 30px;
+}
+.mainContent .contentAnalysis {
+  margin: 0 30px 0px 15px;
+  height: calc(100vh - 300px);
+  background-color: white;
+  border-radius: 8px;
 }
