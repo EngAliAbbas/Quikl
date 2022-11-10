@@ -56,6 +56,7 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  margin-bottom: 0px;
 }
 .header .userInfo .logout, .header .userInfo .notifi {
   font-size: 25px;
@@ -64,7 +65,7 @@
 .header .userInfo .Active, .header .userInfo .notActive {
   display: none;
   font-weight: bold;
-  background-color: #2E9BB8;
+  background-color: #2e9bb8;
   color: white;
   width: 210px;
   height: 50px;

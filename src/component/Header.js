@@ -1,5 +1,5 @@
 import img from'../imgs/logo.png'
-import profilePic from '../imgs/KXUSE8005.JPG'
+import profilePic from '../imgs/profile.jpeg'
 import { IoChevronDownCircleOutline } from "react-icons/io5";
 import { IoNotificationsOutline } from "react-icons/io5";
 import '../Styles/header/header.css'

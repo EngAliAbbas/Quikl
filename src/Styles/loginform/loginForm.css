@@ -70,9 +70,9 @@
   content: "";
   width: 24px;
   height: 24px;
-  border: 1px solid #2E9BB8;
+  border: 1px solid #2e9bb8;
   border-radius: 50%;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   margin-left: 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -80,8 +80,8 @@
 .loginForm .validity label input:checked + p:before {
   width: 20px;
   height: 20px;
-  background-color: #2E9BB8;
-  border: 5px solid #F5F5F5;
+  background-color: #2e9bb8;
+  border: 5px solid #f5f5f5;
   border-radius: 50%;
 }
 .loginForm .validity label input:checked + p {
@@ -131,8 +131,9 @@
   padding: 5px;
 }
 .loginForm form input[type=text], .loginForm form input[type=password] {
-  background-color: #F5F5F5;
-  border: 1px solid #2E9BB8;
+  color: black;
+  background-color: #f5f5f5;
+  border: 1px solid #2e9bb8;
   border-radius: 7px;
   font-size: 20px;
 }

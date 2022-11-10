@@ -9,7 +9,7 @@ import Main from './component/Main'
 import Users from './component/Users'
 import Ads from './component/Ads'
 import './app.css'
-import Login from './Login'
+import Login from './Login';
 export default function App() {
   return (
     <div className='app'>

@@ -25,7 +25,7 @@
       justify-content: space-around;
   height: calc(100vh - 61.6px);
   width: 230px;
-  background-color: #2E9BB8;
+  background-color: #2e9bb8;
 }
 .navContent .nav nav {
   display: -webkit-box;
@@ -76,6 +76,6 @@
 }
 .navContent .nav .icon {
   color: white;
-  padding: 0 30px 0 15px;
+  margin: 0 10px 0 20px;
   font-size: 30px;
 }

@@ -1,5 +1,8 @@
 @use  "../variables/variables.scss" as *   ;
 @use "../mixins/mixins.scss" as *;
+h4{
+    margin-bottom: 0px
+}
 .bigMain{
    @include pagesStyle;
    display: flex;
@@ -17,6 +20,7 @@
     .content{
         @include centring;
         justify-content: space-around;
+        margin-right: 30px;
         width: 100%;
         
         .contentParts:before{
@@ -47,6 +51,13 @@
 
                 
             }
+            p{
+                margin-bottom: 0px
+            }
+            h4{
+                font-size: 18px;
+                font-weight: bold;
+            }
            
                 
             
@@ -70,10 +81,115 @@
     }
 
     .contentAnalysis{
-        margin: 0 30px 0px 15px ; 
-        height: calc((100vh) - (300px));
+        margin: 0 10px 0px 0px ; 
+        height: calc((100vh) - (330px));
         background-color: white;
         border-radius: 8px;
+    }   
+
+}
+.mainLift{
+    width: 30%;
+}
+.mainSlider{
+    
+    width: 100%;
+    
+    h3{
+        font-size: 20px;
+        font-weight: bold;
+        margin: 53px 35px 0px 0;
+    }
+    .sliderContent{
+        padding: 10px 10px 10px 10px;
+        background-color: white;
+        margin: 10px 30px 0px 10px;
+        height: calc((100vh) - (177px));
+        border-radius: 8px;
+        .sliderHeader{
+            .rateNum{
+                @include centring; 
+                justify-content: space-between;
+                margin: 10px 0 10px 0 ;
+                
+                span{
+                    color: $hintColor;
+                }
+                p{
+                    font-weight: bold;
+                }
+            }
+            .rateText{
+                @include centring;
+                justify-content: flex-start;
+                margin: 10px 0 10px 0;
+                Span{
+                    margin-left: 5px;
+                    margin-right: 10px;
+                }
+                .spanOne{   
+                color: #198754;  
+                }
+                .spanTwo{
+                    color: #FFC107;
+                }
+                .spanThree{
+                    color: #DC3545;
+                }
+            }
+            p{
+                margin-bottom: 0;
+            }
+            }
     }
 
+    img{
+        width: 70px;
+    }
+    
+    .sliderFooter{
+        margin-top: 50px;
+
+        .sliderComment{
+            @include centring;
+            justify-content: space-between;
+            margin: 10px 0 15px 0 ;
+            background-color: rgb(252, 252, 252);
+            box-shadow: 1px 1px 1px 2px rgba(235, 235, 235, 0.5);
+            border-radius: 15px 24px 24px 15px;
+            .commentInfo{
+                @include centring;
+                img{
+                    border: .5px ridge;
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    margin-left: 10px;
+                }
+                h5{
+                    margin-bottom: 0;
+                    font-size: 20px;
+                    
+                }
+                p{
+                    margin-bottom: 0;
+                    color: $hintColor;
+                    font-size:13px;
+                }
+                
+            }
+            .commentIcon{
+                @include centring;
+                margin-left: 5px;                
+               background-color: $backgroundColor;
+                height: 18px;
+                width: 22px;
+                border-radius: 5px;
+                color: black;
+                box-shadow: 1px 1px 0px 0px rgba(161, 160, 160, 0.5);
+                cursor: pointer;
+            }
+            
+        }
+    }
 }
