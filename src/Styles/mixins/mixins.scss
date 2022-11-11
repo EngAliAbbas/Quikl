@@ -20,9 +20,32 @@
     margin-top: 7px;
     
 }
+@mixin  imgHandel {
+    border: .5px ridge;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
 @mixin header {
     width: 100%;
         margin: 20px 70px 20px 0 ;
+    
+}
+@mixin barBack {
+            background-color: rgb(252, 252, 252);
+            box-shadow: 1px 1px 1px 2px rgba(235, 235, 235, 0.5);
+            border-radius: 15px 24px 24px 15px;
+    
+}
+@mixin arrow {
+               @include centring;               
+               background-color: $backgroundColor;
+                height: 18px;
+                width: 22px;
+                border-radius: 5px;
+                color: black;
+                box-shadow: 1px 1px 0px 0px rgba(161, 160, 160, 0.5);
+                cursor: pointer;
     
 }
 @mixin  breakPoints($point) 

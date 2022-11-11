@@ -1,0 +1,141 @@
+@use  "../variables/variables.scss" as *   ;
+@use "../mixins/mixins.scss" as *;
+.users{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100vh - 61px);
+    p{
+        margin-bottom: 0px;
+    }
+}
+.usersRight{
+    width: 65%;
+}
+.users-Right{
+    width: 100%;
+    
+    .div{
+        
+        h3{
+            @include header ;
+        }
+
+        .usersContent{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: calc((100vh) - (150px));
+            border-radius: 8px;
+            background-color: white;
+            margin-right: 20px;
+        form{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 100px;
+            width: 100%;
+            
+            .inputs{
+                margin:20px 10px 0 0;
+                display: flex;
+                flex-direction: column;
+                span{
+                    margin:0 5px 5px 0 ;
+                }
+                input{
+                    background-color: $backgroundColor;
+                    height: 30px;
+                    width: 200px;
+                    border: 1px solid gray;
+                    border-radius: 8px;
+                    &:focus{
+                        outline-color: $mainColor;
+                    }
+                }
+                
+                
+            }
+            .submitIn{
+                display: flex;
+                align-items: flex-end;
+                input{
+                    height: 30px;
+                    width: 130px;
+                    background-color: $mainColor;
+                    color: white;
+                    font-weight: bold;
+                    border: none;
+                    border-radius: 8px;
+                    margin-top: 10px;
+                    &:focus{
+                        outline-color: $foucs;
+                    }
+                }
+                margin-right: 10px;
+            }
+
+        }
+        label{
+            margin: 20px 30px 10px 0;
+            span{
+                margin-right: 10px;
+            }
+        }
+        .resultBig{
+            height: 100%;
+            overflow: hidden;
+        .resultDiv{
+            max-width: 100%;
+            
+            @include centring;
+        
+            .resultBar{
+                @include centring;
+                flex-direction: row;
+                justify-content: space-around;
+                height: 40px;
+                width: 95%;
+                background-color: gray;
+                color: white;
+                border-radius: 8px;
+                p{
+                padding-left: 40px
+                }
+               }
+        }
+        .resultContainer{
+            @include centring;
+            overflow: auto;
+            justify-content: flex-start;
+            height: calc((100vh) - (350px));
+            flex-direction: column;
+            width: 100%;
+            margin-top: 20px;
+            
+            .theResult{
+                @include barBack;
+                border-radius: 8px;
+                height: 40px;
+                margin: 10px;
+                position: relative;
+                @include centring;
+                width: 95%;
+                justify-content: space-around;
+            
+                
+                img{
+                    @include imgHandel;
+                    
+                }
+                span{
+                    position: absolute;
+                    left: -10px;
+                    @include arrow;
+                }
+            }
+        }
+        
+
+    }}
+}}

@@ -1,0 +1,218 @@
+.users {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: calc(100vh - 61px);
+}
+.users p {
+  margin-bottom: 0px;
+}
+
+.usersRight {
+  width: 65%;
+}
+
+.users-Right {
+  width: 100%;
+}
+.users-Right .div h3 {
+  width: 100%;
+  margin: 20px 70px 20px 0;
+}
+.users-Right .div .usersContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: calc(100vh - 150px);
+  border-radius: 8px;
+  background-color: white;
+  margin-right: 20px;
+}
+.users-Right .div .usersContent form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100px;
+  width: 100%;
+}
+.users-Right .div .usersContent form .inputs {
+  margin: 20px 10px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.users-Right .div .usersContent form .inputs span {
+  margin: 0 5px 5px 0;
+}
+.users-Right .div .usersContent form .inputs input {
+  background-color: #f5f5f5;
+  height: 30px;
+  width: 200px;
+  border: 1px solid gray;
+  border-radius: 8px;
+}
+.users-Right .div .usersContent form .inputs input:focus {
+  outline-color: #2e9bb8;
+}
+.users-Right .div .usersContent form .submitIn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-right: 10px;
+}
+.users-Right .div .usersContent form .submitIn input {
+  height: 30px;
+  width: 130px;
+  background-color: #2e9bb8;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+.users-Right .div .usersContent form .submitIn input:focus {
+  outline-color: rgb(121, 237, 237);
+}
+.users-Right .div .usersContent label {
+  margin: 20px 30px 10px 0;
+}
+.users-Right .div .usersContent label span {
+  margin-right: 10px;
+}
+.users-Right .div .usersContent .resultBig {
+  height: 100%;
+  overflow: hidden;
+}
+.users-Right .div .usersContent .resultBig .resultDiv {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.users-Right .div .usersContent .resultBig .resultDiv .resultBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 40px;
+  width: 95%;
+  background-color: gray;
+  color: white;
+  border-radius: 8px;
+}
+.users-Right .div .usersContent .resultBig .resultDiv .resultBar p {
+  padding-left: 40px;
+}
+.users-Right .div .usersContent .resultBig .resultContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: calc(100vh - 350px);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+}
+.users-Right .div .usersContent .resultBig .resultContainer .theResult {
+  background-color: rgb(252, 252, 252);
+  -webkit-box-shadow: 1px 1px 1px 2px rgba(235, 235, 235, 0.5);
+          box-shadow: 1px 1px 1px 2px rgba(235, 235, 235, 0.5);
+  border-radius: 15px 24px 24px 15px;
+  border-radius: 8px;
+  height: 40px;
+  margin: 10px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.users-Right .div .usersContent .resultBig .resultContainer .theResult img {
+  border: 0.5px ridge;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.users-Right .div .usersContent .resultBig .resultContainer .theResult span {
+  position: absolute;
+  left: -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f5f5;
+  height: 18px;
+  width: 22px;
+  border-radius: 5px;
+  color: black;
+  -webkit-box-shadow: 1px 1px 0px 0px rgba(161, 160, 160, 0.5);
+          box-shadow: 1px 1px 0px 0px rgba(161, 160, 160, 0.5);
+  cursor: pointer;
+}

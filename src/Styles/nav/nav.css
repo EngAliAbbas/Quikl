@@ -23,7 +23,7 @@
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: calc(100vh - 61.6px);
+  height: calc(100vh - 60px);
   width: 230px;
   background-color: #2e9bb8;
 }

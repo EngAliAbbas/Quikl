@@ -23,7 +23,7 @@ export default function MainSlider() {
                       <ProgressBar variant="warning" now={20} key={2} />
                       <ProgressBar variant="danger" now={10} key={3} />
                     </ProgressBar>
-                        <div className='rateText'><label><span className='spanOne'><BsFillCircleFill /> </span> جديد جدا </label><label><span className='spanTwo'><BsFillCircleFill /></span>جديد </label><label><span className='spanThree'><BsFillCircleFill /></span>سئ </label></div>
+                        <div className='rateText'><label><span className='spanOne'><BsFillCircleFill /> </span> جيد جدا </label><label><span className='spanTwo'><BsFillCircleFill /></span>جيد </label><label><span className='spanThree'><BsFillCircleFill /></span>سئ </label></div>
                     </div>
 
             </div>

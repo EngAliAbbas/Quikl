@@ -121,7 +121,7 @@
   width: 400px;
 }
 .loginForm form span {
-  margin-right: 70px;
+  margin-right: 50px;
 }
 .loginForm form input[type=submit], .loginForm form input[type=text], .loginForm form input[type=password] {
   width: 250px;
@@ -132,6 +132,8 @@
 }
 .loginForm form input[type=text], .loginForm form input[type=password] {
   color: black;
+  height: 40px;
+  width: 300px;
   background-color: #f5f5f5;
   border: 1px solid #2e9bb8;
   border-radius: 7px;
