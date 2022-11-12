@@ -216,3 +216,140 @@
           box-shadow: 1px 1px 0px 0px rgba(161, 160, 160, 0.5);
   cursor: pointer;
 }
+
+.usersLeft {
+  width: 35%;
+  height: 100%;
+}
+.usersLeft .userLeft {
+  height: calc(100vh - 61px);
+  overflow: hidden;
+}
+.usersLeft .userLeft .userInfo {
+  margin-right: 20px;
+  border-radius: 8px;
+  position: relative;
+  width: 90%;
+  margin-top: 75px;
+  background-color: white;
+}
+.usersLeft .userLeft .userInfo .userLeftHeader img {
+  position: relative;
+  top: -50px;
+  right: 30%;
+  max-width: 40%;
+  min-width: 20%;
+  border-radius: 15px;
+}
+.usersLeft .userLeft .userInfo .userLeftHeader span {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  cursor: pointer;
+}
+.usersLeft .userLeft .userInfo .userLeftHeader button {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(184, 184, 184, 0.5);
+          box-shadow: 1px 1px 1px 1px rgba(184, 184, 184, 0.5);
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 2px;
+  font-weight: bold;
+}
+.usersLeft .userLeft .userInfo .userLeftDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.usersLeft .userLeft .userInfo .userLeftDetails label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5px;
+}
+.usersLeft .userLeft .userInfo .userLeftDetails label p {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.usersLeft .userLeft .userInfo .userLeftDetails label span {
+  margin-left: 5px;
+}
+.usersLeft .userLeft .userInfo .userLeftDetails label button {
+  background-color: white;
+  color: #2e9bb8;
+  border: none;
+  margin-left: 10px;
+}
+.usersLeft .userLeft .userFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 200px;
+}
+.usersLeft .userLeft .userFooter .contentParts:before {
+  content: "";
+  position: relative;
+  left: -10px;
+  width: 1.8%;
+  border-radius: 3px;
+  background-color: #2e9bb8;
+}
+.usersLeft .userLeft .userFooter .contentParts {
+  margin: 10px 0 10px 0;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #FFFFFF;
+  padding: 10px 0 10px 0;
+  border-radius: 7px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+.usersLeft .userLeft .userFooter .contentParts label {
+  font-size: 22px;
+  width: 20%;
+  height: 43.93px;
+  background-color: #f5f5f5;
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 7px;
+  margin-left: 15px;
+}
+.usersLeft .userLeft .userFooter .contentParts p {
+  margin-bottom: 0px;
+}
+.usersLeft .userLeft .userFooter .contentParts h4 {
+  font-size: 18px;
+  font-weight: bold;
+}

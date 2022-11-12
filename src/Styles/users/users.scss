@@ -139,3 +139,125 @@
 
     }}
 }}
+
+.usersLeft{
+    width: 35%;
+    height: 100%;
+   
+    
+.userLeft{
+    height: calc((100vh) - (61px));
+    overflow: hidden;
+    
+    .userInfo{
+        margin-right: 20px;
+        border-radius: 8px;
+        position: relative;
+        width: 90%;
+        margin-top: 75px;
+        background-color: white;
+        .userLeftHeader{
+        img{
+            position: relative;
+            top: -50px;
+            right: 30%;
+            max-width: 40%;
+            min-width: 20%;
+            border-radius: 15px;
+        }
+        span{
+            position: absolute;
+            top: 5px;
+            left: 10px;
+            cursor: pointer;
+        }
+        button{
+            position: absolute;
+            top: 30px;
+            left: 10px;
+            background-color: white;
+            color: black;
+            border: none;
+            box-shadow: 1px 1px 1px 1px rgba(184, 184, 184, 0.5);
+            border-radius: 8px;
+            font-size: 14px;
+            padding: 2px;
+            font-weight: bold;
+        }
+        
+
+    }
+
+    .userLeftDetails{
+        display: flex;
+        flex-direction: column;
+        label{
+            display: flex;
+            justify-content: space-between;
+            margin: 5px;
+            p{
+            font-weight: bold;
+                margin-right: 10px;
+            
+            }
+            span{
+                margin-left: 5px;
+            }
+            button{
+                background-color: white;
+                color: $mainColor;
+                border: none;
+                margin-left: 10px;
+            }
+        }
+    }
+    }
+    .userFooter{
+       @include centring;
+       flex-direction: column;
+       height: 200px;
+       .contentParts:before{
+        content: "";
+        position: relative;
+        left: -10px; 
+        width: 1.8%;
+        border-radius: 3px;
+        background-color: $mainColor;
+    }
+    .contentParts{
+        margin: 10px 0 10px 0;
+        width: 90%;
+        display: flex;
+        background-color: $whiteColor;
+        padding: 10px 0 10px 0;
+        border-radius: 7px;
+        flex-wrap: nowrap;
+                    
+            label{
+            font-size: 22px;
+            width: 20%; 
+            height: 43.93px;
+            background-color: $backgroundColor;
+            margin-right: 30px;
+            @include centring;
+            border-radius: 7px;
+            margin-left: 15px;
+
+            
+        }
+        p{
+            margin-bottom: 0px
+        }
+        h4{
+            font-size: 18px;
+            font-weight: bold;
+        }
+       
+            
+        
+    }
+    }
+    
+}
+
+}
