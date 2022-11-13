@@ -123,21 +123,16 @@
 .loginForm form span {
   margin-right: 50px;
 }
-.loginForm form input[type=submit], .loginForm form input[type=text], .loginForm form input[type=password] {
-  width: 250px;
-  height: 30px;
-  border-radius: 7px;
-  direction: ltr;
-  padding: 5px;
-}
 .loginForm form input[type=text], .loginForm form input[type=password] {
+  direction: ltr;
+  border-radius: 7px;
+  padding: 5px;
   color: black;
-  height: 40px;
-  width: 300px;
   background-color: #f5f5f5;
   border: 1px solid #2e9bb8;
   border-radius: 7px;
   font-size: 20px;
+  width: 75%;
 }
 .loginForm form input[type=text]:focus, .loginForm form input[type=password]:focus {
   outline-color: rgb(121, 237, 237);
@@ -152,6 +147,8 @@
   height: 38px;
   margin-bottom: 20px;
   cursor: pointer;
+  border-style: none;
+  border-radius: 7px;
 }
 .loginForm form p {
   font-weight: bold;

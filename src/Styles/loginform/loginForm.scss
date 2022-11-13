@@ -79,43 +79,19 @@
         span{
             margin-right: 50px;
         }
-        %input {
-            
-            width: 250px;
-            height: 30px;
-            border-radius: 7px;
-            direction: ltr;
-            padding: 5px;
-                }
+       
 
         input {
             &[type="text"] , &[type="password"]{
-                @extend %input;
-                color: black;
-                height: 40px;
-                width: 300px;
-                background-color: $backgroundColor;
-                border: 1px solid $mainColor;
-                border-radius: 7px;
-                font-size: 20px;
-                &:focus{
-                    outline-color: $foucs;
-                }
+                direction: ltr;
+                @include inputStyle;
+                width: 75%;
             }
 
             
             
             &[type="submit"] {
-                @extend %input;
-                background-color: black;
-                color: white;
-                font-weight:bold;
-                font-size: 20px;
-                margin-top: 15px;
-                width: 100px;
-                height: 38px;
-                margin-bottom: 20px;
-                cursor: pointer;
+               @include inButtomStyle
             }
             
         }

@@ -47,6 +47,7 @@
                     background-color: $backgroundColor;
                     height: 30px;
                     width: 200px;
+                    color: black;
                     border: 1px solid gray;
                     border-radius: 8px;
                     &:focus{
@@ -170,8 +171,11 @@
             top: 5px;
             left: 10px;
             cursor: pointer;
+           
         }
-        button{
+        
+        .delActive{
+            display: none;
             position: absolute;
             top: 30px;
             left: 10px;
@@ -184,16 +188,19 @@
             padding: 2px;
             font-weight: bold;
         }
-        
+        .delNotActive{
+            display: block;
+            @extend .delActive;
+        }
 
     }
 
     .userLeftDetails{
-        display: flex;
+        display: flex; 
         flex-direction: column;
         label{
             display: flex;
-            justify-content: space-between;
+            justify-content: start;
             margin: 5px;
             p{
             font-weight: bold;
@@ -201,9 +208,11 @@
             
             }
             span{
-                margin-left: 5px;
+                margin-right: 5px;
             }
             button{
+                position: absolute;
+                left: 0;
                 background-color: white;
                 color: $mainColor;
                 border: none;
@@ -257,7 +266,81 @@
         
     }
     }
+    .popClose{
+       
+        
+        @include popDisply;
+
+       form{
+        @include popPartDisply;
+        
+        label{
+           @include closeButton;
+
+        }
+        .formPop{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            width: 50%;
+            
+            span{
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            input{
+           &[type="text"]{
+           @include inputStyle;
+           width: 100%;
+           font-size: 15px
+           ;
+           }
+           &[type ="submit"]{
+            @include inButtomStyle;
+            width: 100%;
+            border-style: none;
+           }
+        }
+        }
+        
+       }
+    }
+    .popOpen{
+        @extend .popClose;
+        display: flex;
+    }
+}
+.popDeleteClose{
+    @include popDisply;
     
+    >div{
+       @include popPartDisply;
+       flex-direction: column;
+       align-items: center;
+       label{
+        @include closeButton;
+
+       }
+       .buttons{
+        @include centring;
+        justify-content: space-around;
+        width: 70%;
+       .finalDelete{
+        @include inButtomStyle;
+        width: 40%;
+       }
+       .cancel{
+        @include inButtomStyle;
+        background-color: $redColor;
+        color: white;
+       }
+    }
+}
+
+}
+.popDeleteOpen{
+    @extend .popDeleteClose;
+    display: flex;
 }
 
 }

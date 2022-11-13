@@ -70,6 +70,7 @@
   background-color: #f5f5f5;
   height: 30px;
   width: 200px;
+  color: black;
   border: 1px solid gray;
   border-radius: 8px;
 }
@@ -247,7 +248,8 @@
   left: 10px;
   cursor: pointer;
 }
-.usersLeft .userLeft .userInfo .userLeftHeader button {
+.usersLeft .userLeft .userInfo .userLeftHeader .delActive, .usersLeft .userLeft .userInfo .userLeftHeader .delNotActive {
+  display: none;
   position: absolute;
   top: 30px;
   left: 10px;
@@ -260,6 +262,9 @@
   font-size: 14px;
   padding: 2px;
   font-weight: bold;
+}
+.usersLeft .userLeft .userInfo .userLeftHeader .delNotActive {
+  display: block;
 }
 .usersLeft .userLeft .userInfo .userLeftDetails {
   display: -webkit-box;
@@ -274,9 +279,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   margin: 5px;
 }
 .usersLeft .userLeft .userInfo .userLeftDetails label p {
@@ -284,9 +289,11 @@
   margin-right: 10px;
 }
 .usersLeft .userLeft .userInfo .userLeftDetails label span {
-  margin-left: 5px;
+  margin-right: 5px;
 }
 .usersLeft .userLeft .userInfo .userLeftDetails label button {
+  position: absolute;
+  left: 0;
   background-color: white;
   color: #2e9bb8;
   border: none;
@@ -352,4 +359,224 @@
 .usersLeft .userLeft .userFooter .contentParts h4 {
   font-size: 18px;
   font-weight: bold;
+}
+.usersLeft .userLeft .popClose, .usersLeft .userLeft .popOpen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: calc(100% - 60px);
+  width: calc(100% - 230px);
+}
+.usersLeft .userLeft .popClose form, .usersLeft .userLeft .popOpen form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 7px;
+  background-color: white;
+  height: 40%;
+  width: 40%;
+  position: relative;
+}
+.usersLeft .userLeft .popClose form label, .usersLeft .userLeft .popOpen form label {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 11%;
+  height: 12%;
+  color: rgb(217, 0, 0);
+  border-radius: 5px 7px 5px 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.usersLeft .userLeft .popClose form label:hover, .usersLeft .userLeft .popOpen form label:hover {
+  background-color: rgb(217, 0, 0);
+  color: white;
+}
+.usersLeft .userLeft .popClose form .formPop, .usersLeft .userLeft .popOpen form .formPop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+.usersLeft .userLeft .popClose form .formPop span, .usersLeft .userLeft .popOpen form .formPop span {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.usersLeft .userLeft .popClose form .formPop input[type=text], .usersLeft .userLeft .popOpen form .formPop input[type=text] {
+  border-radius: 7px;
+  padding: 5px;
+  color: black;
+  background-color: #f5f5f5;
+  border: 1px solid #2e9bb8;
+  border-radius: 7px;
+  font-size: 20px;
+  width: 100%;
+  font-size: 15px;
+}
+.usersLeft .userLeft .popClose form .formPop input[type=text]:focus, .usersLeft .userLeft .popOpen form .formPop input[type=text]:focus {
+  outline-color: rgb(121, 237, 237);
+}
+.usersLeft .userLeft .popClose form .formPop input[type=submit], .usersLeft .userLeft .popOpen form .formPop input[type=submit] {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 15px;
+  width: 100px;
+  height: 38px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-style: none;
+  border-radius: 7px;
+  width: 100%;
+  border-style: none;
+}
+.usersLeft .userLeft .popOpen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.usersLeft .popDeleteClose, .usersLeft .popDeleteOpen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: calc(100% - 60px);
+  width: calc(100% - 230px);
+}
+.usersLeft .popDeleteClose > div, .usersLeft .popDeleteOpen > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 7px;
+  background-color: white;
+  height: 40%;
+  width: 40%;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  align-items: center;
+}
+.usersLeft .popDeleteClose > div label, .usersLeft .popDeleteOpen > div label {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 11%;
+  height: 12%;
+  color: rgb(217, 0, 0);
+  border-radius: 5px 7px 5px 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.usersLeft .popDeleteClose > div label:hover, .usersLeft .popDeleteOpen > div label:hover {
+  background-color: rgb(217, 0, 0);
+  color: white;
+}
+.usersLeft .popDeleteClose > div .buttons, .usersLeft .popDeleteOpen > div .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 70%;
+}
+.usersLeft .popDeleteClose > div .buttons .finalDelete, .usersLeft .popDeleteOpen > div .buttons .finalDelete {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 15px;
+  width: 100px;
+  height: 38px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-style: none;
+  border-radius: 7px;
+  width: 40%;
+}
+.usersLeft .popDeleteClose > div .buttons .cancel, .usersLeft .popDeleteOpen > div .buttons .cancel {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 15px;
+  width: 100px;
+  height: 38px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-style: none;
+  border-radius: 7px;
+  background-color: rgb(217, 0, 0);
+  color: white;
+}
+.usersLeft .popDeleteOpen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
